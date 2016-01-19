@@ -1,0 +1,22 @@
+{
+  "name": "notified-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blimmer/ember-meetup-notified-by-deploy-server.git"
+  },
+  "author": "Ben Limmer <ben@benlimmer.com> (http://benlimmer.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blimmer/ember-meetup-notified-by-deploy-server/issues"
+  },
+  "homepage": "https://github.com/blimmer/ember-meetup-notified-by-deploy-server#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
