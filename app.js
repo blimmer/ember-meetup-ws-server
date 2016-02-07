@@ -8,13 +8,7 @@ const io = require('socket.io')(server);
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
 app.use(function(req, res, next) {
-  let allowedClient = "*";
-  if (process.env.NODE_ENV === 'production') {
-    allowedClient = 'http://notified-ember.s3-website-us-west-2.amazonaws.com ' +
-                    'http://shared-image.herokuapp.com';
-  }
-
-  res.header("Access-Control-Allow-Origin", allowedClient);
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
